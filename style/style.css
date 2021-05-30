@@ -266,12 +266,14 @@ p span{
     align-items: flex-end;
 }
 .diagram__item{
-    
+    display: flex;
+    flex-direction: column;
 }
 .item__title{
     font-size: 36px;
     font-weight: 700;
     color: #fff;
+    margin: 30px 0;
 }
 .item__text{
     font-size: 14px;
@@ -279,29 +281,157 @@ p span{
     color: #fff;
     opacity: 0.4;
 }
-.item__block1{
-    width: 324px;
+.item__block{
+    width: 100%;
     height: 80px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
-}
+/* }
 .item__block2{
-    width: 324px;
-    height: 60px;
+    width: 100%;
+    height: 80px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
     margin-top: 10px;
 }
 .item__block3{
-    width: 324px;
-    height: 30px;
+    width: 100%;
+    height: 80px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
     margin-top: 15px;
 }
 .item__block4{
-    width: 324px;
-    height: 10px;
+    width: 100%;
+    height: 80px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
-    margin-top: 10px;
+    margin-top: 10px; */
 }
+/* .diagram__item::after{
+    content: '';
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
+}
+.diagram__item::after :nth-of-type() .item__block{
 
+} */
 
 /* START - end */
+
+
+/* PROFECOIN - start */
+.profecion{
+    background-color: #000;
+}
+.profecion__wrap{
+    padding: 100px;
+}
+.profecion__list{
+    display: flex;
+    flex-direction: row;
+}
+.profecion__title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 200px;
+}
+.profecion__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+}
+.item__title span{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 1;
+}
+.item__text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.4;
+    padding: 0 15px;
+}
+
+/* PROFECOIN - end */
+
+/* PARTNERS - start */
+.partners{
+    background-color: #000;
+}
+.partners__title{
+    display: flex;
+    flex-direction: row;
+}
+.wrap__title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin: 30px 0;
+}
+.partners__table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.table__item{
+    border: solid 2px;
+    border-color: #121212;
+    
+}
+.item__img{
+    padding: 30px;
+}
+/* PARTNERS - end */
+
+/* LEARNING - start */
+.learning{
+    background-color: #000;
+}
+.learning__wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.learning__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title__header{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+.title__text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.4;
+}
+.learning__graf{
+
+}
+.graf__item{
+    
+}
+.item__number{
+    font-size: 12px;
+    font-weight: 200;
+    color: #fff;
+    opacity: 0.4;
+}
+.item__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 1;
+}
+
+/* LEARNING - end */
