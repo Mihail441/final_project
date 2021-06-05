@@ -46,13 +46,13 @@ a{
     color: #fff;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
-    padding: 10px 30px;
-    position: absolute;
-    left: 1657px;
-    top: 38px;
+    padding: 0 30px;
+    margin: 10px 30px;
+    border: none;
 }
 .heder__menu{
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 /* HEADER - end */
@@ -116,6 +116,8 @@ a{
     border-radius: 50px;
     padding: 0 30px;
     margin-top: 25px;
+    border: none;
+    color: #fff;
 }
 .curses__wrap{
     display: flex;
@@ -416,16 +418,82 @@ p span{
     opacity: 0.4;
 }
 .learning__graf{
-
+    min-width: calc(300px * 2 + 40px * 2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
-.graf__item{
-    
+.learning__graf::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
+.graf__item:nth-child(2n+1){
+    width: 300px;
+    height: 100px;
+    position: relative;
+    left: 0;
+    text-align: right;
+}
+.graf__item:nth-child(2n){
+    width: 300px;
+    height: 100px;
+    position: relative;
+    left: 380px;
+}
+.graf__item:nth-child(2n+1)::before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.4;
+    position: absolute;
+    left: 300px;
+    top: -125px;
+}
+/* .graf__item:nth-child(7)::before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.4;
+    position: absolute;
+    left: 300px;
+    top: -125px;
+} */
+.graf__item:nth-child(2n)::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.4;
+    position: absolute;
+    left: -40px;
+    bottom: 30px;
+}
+/* .graf__item::before{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    color: #fff;
+    opacity: 0.4;
+} */
 .item__number{
     font-size: 12px;
     font-weight: 200;
     color: #fff;
     opacity: 0.4;
+    padding: 0 25px;
 }
 .item__text{
     font-size: 16px;
@@ -433,5 +501,123 @@ p span{
     color: #fff;
     opacity: 1;
 }
-
+/* :nth-child(2n+1) */
 /* LEARNING - end */
+
+/* TEACHERS - start */
+.teachers{
+    background-color: #000;
+}
+.teachers__wrap{
+    
+}
+.teachers__header{
+    display: flex;
+    flex-direction: row;
+}
+.header__title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+.teachers__slider{
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 200px; */
+}
+.slider__item{
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item__title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 1;
+}
+.item__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 1;
+}
+.item__btn{
+    background-color: #000;
+    border: solid 1px #fff;
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: #fff;
+}
+/* TEACHERS - end */
+
+/* FOOTER - start */
+footer{
+    background-color: #000;
+}
+.footer__wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap__header{
+    text-align: center;
+    margin: 100px 0;
+}
+.wrap__title{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin: 30px 0;
+}
+.wrap__text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.4;
+}
+.footer__email{
+    width: 365px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+}
+.footer__btn{
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    padding: 10px 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+form{
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+}
+.wrap__icons{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+.icons__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50%;
+    margin: 15px;
+}
+.wrap__icon{
+    padding: 20px;
+}
+
+/* FOOTER - end */

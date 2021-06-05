@@ -15,7 +15,7 @@ $(function() {
        event.preventDefault();
 
        var $this = $(this),
-           blockId = $this.data('collapse');
+       learning = $this.data('collapse');
 
        $this.toggleClass("active");
    });
