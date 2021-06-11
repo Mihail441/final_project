@@ -15,7 +15,9 @@ body{
 section{
     
 }
-
+h2{
+    line-height: 60%;
+}
 /* HEADER - start */
 header{
     width: 100vw;
@@ -26,12 +28,17 @@ header{
     right: 0;
     z-index: 1000;
 }
+.header__logo{
+    position: absolute;
+    margin-right: 200px;
+}
 .menu__list{
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: flex-end;
- list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    text-transform: capitalize;
 }
 .menu__item{
     margin-left: 60px;
@@ -46,9 +53,19 @@ a{
     color: #fff;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     border-radius: 50px;
-    padding: 0 30px;
+    padding: 10px 30px;
     margin: 10px 30px;
     border: none;
+    white-space: nowrap;
+}
+.btn{
+    word-wrap: normal;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    white-space: nowrap;
 }
 .heder__menu{
     display: flex;
@@ -111,14 +128,6 @@ a{
 .curses{
     background-color: #121212;
 }
-.curses__btn{
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-    border-radius: 50px;
-    padding: 0 30px;
-    margin-top: 25px;
-    border: none;
-    color: #fff;
-}
 .curses__wrap{
     display: flex;
     flex-direction: row;
@@ -126,12 +135,30 @@ a{
     align-items: flex-start;
     padding: 10px 30px;
 }
-.wrap__btn{
-    margin-top: 20px;
+.curses__content{
+    display: flex;
+    flex-direction: row;
 }
+.wrap__btn{
+    margin: auto 0;
+    width: 15%;
+}
+
 .curses__students{
+    margin: 0 80px;
+    width: 40%;
     color: #fff;
-    margin: 0 81px;
+    /* margin: 0 81px; */
+}
+.students__content{
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.students__title{
+    color: #fff;
+    opacity: 0.4;
 }
 .students__title span{
     font-size: 16px;
@@ -140,7 +167,8 @@ a{
     opacity: 0.4;
 }
 .curses__diagram{ 
-    margin: 0 81px;
+    margin: 0 30px;
+    width: 45%;
 }
 .diagram__tile span{
     font-size: 16px;
@@ -154,6 +182,24 @@ a{
 .curses__blocks{
     display: flex;
     flex-direction: row;
+}
+.diagram__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.diagram__numbers{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.numbers__counter{
+    color: #ffffff;
+    opacity: 0.4;
+}
+.diagram__counter{
+    color: #fff;
 }
 .diagram__block-purpul{
     width: 440px;
@@ -211,6 +257,7 @@ p span{
     font-size: 48px;
     font-weight: 700;
     color: #fff;
+    line-height: 60px;
 }
 .about__describtion{
     font-size: 16px;
@@ -235,21 +282,36 @@ p span{
     flex-direction: column;
 
 }
-.start__block{
+.start__content{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     /* justify-content: flex-start;
     align-items: flex-start; */
     margin-right: 350px;
 }
-.start__text{
+.start__content{
     margin-top: 100px;
+}
+.content__img{
+    margin: 0 15px;
+}
+.content__list{
+    display: flex;
+    flex-direction: row-reverse;
+    white-space: nowrap;
+    align-items: flex-start;
+    padding-right: 450px;
 }
 .start__title{
     font-size: 48px;
     font-weight: 700;
     color: #fff;
 }
+/* .start__item::before{
+    content: url(./img/icon-heading.png);
+    display: block;
+
+} */
 .start__works{
     font-size: 16px;
     font-weight: 400;
@@ -262,33 +324,66 @@ p span{
     justify-content: flex-start;
     margin-top: 100px;
 }
-.start__diagram{
+.start__list{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 .diagram__item{
+    width: 25%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
-.item__title{
+.start__title{
     font-size: 36px;
     font-weight: 700;
     color: #fff;
     margin: 30px 0;
 }
-.item__text{
+.start__text{
     font-size: 14px;
     font-weight: 400;
     color: #fff;
     opacity: 0.4;
 }
-.item__block{
+.start__block{
     width: 100%;
     height: 80px;
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
-/* }
-.item__block2{
+}
+.start__block::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+.diagram__item:nth-child(2) .start__block::before{
+    height: 75%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.diagram__item:nth-child(3) .start__block::before{
+    height: 50%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.diagram__item:nth-child(4) .start__block::before{
+    height: 25%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    top: 50%;
+    transform: translate(0, -50%);
+}
+/* .item__block2{
     width: 100%;
     height: 80px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
@@ -305,7 +400,7 @@ p span{
     height: 80px;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);;
     margin-top: 10px; */
-}
+/* } */
 /* .diagram__item::after{
     content: '';
     width: 100%;
@@ -319,38 +414,41 @@ p span{
 /* START - end */
 
 
-/* PROFECOIN - start */
-.profecion{
+/* PROFESSION - start */
+.profession{
     background-color: #000;
 }
-.profecion__wrap{
+.profession__wrap{
     padding: 100px;
 }
-.profecion__list{
+.profession__list{
     display: flex;
     flex-direction: row;
+    margin: 130px 0;
 }
-.profecion__title{
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    margin-left: 200px;
-}
-.profecion__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 15px;
-    text-align: center;
-}
-.item__title span{
+.profession__name{
     font-size: 24px;
     font-weight: 500;
     color: #fff;
-    opacity: 1;
+    /* margin-left: 200px; */
+    white-space: nowrap;
 }
-.item__text{
+.profession__item{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+}
+.profession__title{
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 100px;
+    white-space: nowrap;
+}
+.profession__text{
     font-size: 14px;
     font-weight: 400;
     color: #fff;
@@ -358,7 +456,7 @@ p span{
     padding: 0 15px;
 }
 
-/* PROFECOIN - end */
+/* PROFESSION - end */
 
 /* PARTNERS - start */
 .partners{
@@ -457,6 +555,7 @@ p span{
     position: absolute;
     left: 300px;
     top: -125px;
+    margin-top: 195px;
 }
 /* .graf__item:nth-child(7)::before{
     content: "";
@@ -526,6 +625,7 @@ p span{
     /* padding: 0 200px; */
 }
 .slider__item{
+    max-width: 30%;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -551,6 +651,7 @@ p span{
     padding: 10px 30px;
     color: #fff;
 }
+
 /* TEACHERS - end */
 
 /* FOOTER - start */
@@ -564,7 +665,7 @@ footer{
 }
 .wrap__header{
     text-align: center;
-    margin: 100px 0;
+    margin: 100px 0 50px 0;
 }
 .wrap__title{
     font-size: 36px;
@@ -577,6 +678,7 @@ footer{
     font-weight: 400;
     color: #fff;
     opacity: 0.4;
+    line-height: 25px;
 }
 .footer__email{
     width: 365px;
@@ -586,13 +688,27 @@ footer{
     color: #fff;
     border: none;
 }
-.footer__btn{
+/* .footer__btn{
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     border-radius: 50px;
     padding: 10px 30px;
     color: #fff;
     border: none;
     outline: none;
+} */
+.img__wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 190px;
+    max-height: 190px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.item__img{
+    margin: 0 auto;
 }
 form{
     margin: 0 auto;
@@ -609,6 +725,8 @@ form{
     margin: 30px;
 }
 .icons__item{
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -619,5 +737,7 @@ form{
 .wrap__icon{
     padding: 20px;
 }
-
+.icon__link{
+    text-decoration: none;
+}
 /* FOOTER - end */

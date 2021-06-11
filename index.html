@@ -13,8 +13,8 @@
     <header>
         <div class="container">
             <div class="header__nav">
-                <div class="header__icon">
-                    <img src="" alt="">
+                <div class="header__logo">
+                    <a href="#"><img src="./img/Group.png" alt="" class="logo__img"></a>
                 </div>
                 <div class="heder__menu">
                     <ul class="menu__list">
@@ -22,7 +22,7 @@
                         <li class="menu__item"><a href="#learning">курсы</a></li>
                         <li class="menu__item"><a href="#about">расписание</a></li>
                         <li class="menu__item"><a href="#teachers">преподаватели</a></li>
-                        <li class="menu__item"><a href="#profecion">рассылка</a></li>
+                        <li class="menu__item"><a href="#profession">рассылка</a></li>
                         <li class="menu__item"><a href="#footer">контакты</a></li>
                     </ul>
                     <button class="header__btn">Зайти в кабинет</button>
@@ -49,15 +49,55 @@
     <section class="curses" id="curses">
         <div class="container">
             <div class="curses__wrap">
-                <div class="wrap__btn">
-                    <button class="curses__btn">Заказать курс</button>
+                    <div class="wrap__btn">
+                        <button class="btn">Заказать курс</button>
+                    </div>
+                    <div class="curses__students">
+                        <div class="students__content">
+                            <p class="students__title">Количество учеников:</p>
+                            <p class="students__count">200</p>
+                        </div>
+                        <div class="students__content">
+                            <p class="students__title">Успешно закончили курс:</p>
+                            <p class="students__count">190</p>
+                        </div>
+                    </div>
+                <div class="curses__diagram">
+                    <div class="diagram__content">
+                        <p class="diagram__tile">Заработано учениками:</p>
+                        <p class="diagram__counter">400000$</p>
+                    </div>
+                    <div class="curses__blocks">
+                        <div class="diagram__block-purpul"></div>
+                        <div class="diagram__block-wite"></div>
+                    </div>
+                    <div class="diagram__numbers">
+                        <p class="numbers__counter">0</p>
+                        <p class="numbers__counter">1 000 000₽</p>
+                    </div>
                 </div>
-                <div class="curses__students">
-                    <p class="students__title"><span>Количество учеников:</span>200</p>
-                    <p class="students__title"><span>Успешно закончили курс:</span> 190</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="curses" id="curses">
+        <div class="container">
+            <div class="curses__wrap">
+                <div class="curses__content">
+                    <div class="wrap__btn">
+                        <button class="btn">Заказать курс</button>
+                    </div>
+                    <div class="curses__students">
+                        <div class="students__content">
+                            <p class="students__title">Количество учеников:</p>
+                            <p class="students__count">200</p>
+                        </div>
+                        <div class="students__content">
+                            <p class="students__title">Успешно закончили курс:</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="curses__diagram">
-                    <p class="diagram__tile"><span>Заработано учениками: </span>400000$</p>
+                    <p class="diagram__tile"><span>Заработано учениками:</span>400000$</p>
                     <div class="curses__blocks">
                         <div class="diagram__block-purpul"></div>
                         <div class="diagram__block-wite"></div>
@@ -66,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="about" id="about">
         <div class="container">
             <div class="about__wrap">
@@ -86,58 +126,62 @@
     <section class="start" id="start">
         <div class="container">
             <div class="start__wrap">
-                <div class="start__block">
-                    <div class="start__text">
-                        <h2 class="start__title">Быстрый старт</h3>
+                <div class="start__item">
+                    <div class="start__content">
+                        <div class="content__list">
+                            <h2 class="start__title">Быстрый старт</h3>
+                            <div class="content__img">
+                                <img src="./img/icon-heading.png" alt="" class="conten__icon">
+                            </div>
+                        </div>
                         <p class="start__works">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
                     </div>
-                    <img src="./img/icon-heading.png" alt="" class="start__icon">
                 </div>
-                    <div class="start__diagram">
+                    <div class="start__list">
                         <div class="diagram__item">
-                            <p class="item__title">100%</p>
-                            <div class="item__block"></div>
-                            <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
+                            <p class="start__title">100%</p>
+                            <div class="start__block"></div>
+                            <p class="start__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
                         </div>
                         <div class="diagram__item">
-                            <p class="item__title">75%</p>
-                            <div class="item__block"></div>
-                            <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
+                            <p class="start__title">75%</p>
+                            <div class="start__block"></div>
+                            <p class="start__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
                         </div>
                         <div class="diagram__item">
-                            <p class="item__title">50%</p>
-                            <div class="item__block"></div>
-                            <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
+                            <p class="start__title">50%</p>
+                            <div class="start__block"></div>
+                            <p class="start__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
                         </div>
                         <div class="diagram__item">
-                            <p class="item__title">Итог</p>
-                            <div class="item__block"></div>
-                            <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
+                            <p class="start__title">Итог</p>
+                            <div class="start__block"></div>
+                            <p class="start__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugiat consectetur assumenda sint voluptatum soluta dignissimos, ut, ullam laborum dicta facere et animi iste eos maxime excepturi tempora magnam necessitatibus.</p>
                         </div>
                     </div>
                 </div> 
             </div>
         </div>
     </section>
-    <section class="profecion" id="profecion">
+    <section class="profession" id="profession">
         <div class="container">
-            <div class="profecion__wrap">
-                <h2 class="profecion__title">Получите профессию прямо сейчас</h5>
-                <div class="profecion__list">
-                    <div class="profecion__item">
-                        <img src="./img/icon-1.png" alt="" class="item__img">
-                        <h3 class="item__title"><span>Только практические навыки в работе</span></h3>
-                        <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis maiores earum cumque consequatur, aliquid ducimus aspernatur alias suscipit, ullam velit deserunt cum commodi porro laborum qui dolores ratione nemo.</p>
+            <div class="profession__wrap">
+                <h2 class="profession__title">Получите профессию прямо сейчас</h5>
+                <div class="profession__list">
+                    <div class="profession__item">
+                        <img src="./img/icon-1.png" alt="" class="profession__img">
+                        <h3 class="profession__name">Только практические <br> навыки в работе</h3>
+                        <p class="profession__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis maiores earum cumque consequatur, aliquid ducimus aspernatur alias suscipit, ullam velit deserunt cum commodi porro laborum qui dolores ratione nemo.</p>
                     </div>
-                    <div class="profecion__item">
-                        <img src="./img/icon-2.png" alt="" class="item__img">
-                        <h3 class="item__title"><span>Работа на самом современном оборудовании</span></h3>
-                        <p class="item__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ipsam. Quod quasi aspernatur expedita, sequi porro, culpa autem commodi voluptatum voluptatibus, asperiores deleniti sunt! Consequatur non quas culpa tenetur veritatis.</p>
+                    <div class="profession__item">
+                        <img src="./img/icon-2.png" alt="" class="profession__img">
+                        <h3 class="profession__name">Работа на самом <br> современном оборудовании</h3>
+                        <p class="profession__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, ipsam. Quod quasi aspernatur expedita, sequi porro, culpa autem commodi voluptatum voluptatibus, asperiores deleniti sunt! Consequatur non quas culpa tenetur veritatis.</p>
                     </div>
-                    <div class="profecion__item">
-                        <img src="./img/Vector(1).png" alt="" class="item__img">
-                        <h3 class="item__title"><span>Сертификация по окончании обучения</span></h3>
-                        <p class="item__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ad animi, fuga sapiente illo quisquam laborum hic officia ipsum sit quaerat neque nesciunt minus quam nemo praesentium vitae? Aliquam, dolores!</p>
+                    <div class="profession__item">
+                        <img src="./img/Vector(1).png" alt="" class="profession__img">
+                        <h3 class="profession__name">Сертификация <br> по окончании обучения</h3>
+                        <p class="profession__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ad animi, fuga sapiente illo quisquam laborum hic officia ipsum sit quaerat neque nesciunt minus quam nemo praesentium vitae? Aliquam, dolores!</p>
                     </div>
                 </div>
             </div>
@@ -229,19 +273,25 @@
                 </div>
                 <div class="teachers__slider">
                     <div class="slider__item">
-                        <img src="./img/Ellipse 2(1).png" alt="" class="item__img">
+                        <div class="img__wrap">
+                            <img src="./img/Ellipse 2(1).png" alt="" class="item__img">
+                        </div>
                         <p class="item__title">Дмитрий Иванов</p>
                         <p class="item__text">Специолист по видеокартам</p>
                         <button class="item__btn">Биография</button>
                     </div>
                     <div class="slider__item">
-                        <img src="./img/Ellipse 2(2).png" alt="" class="item__img">
+                        <div class="img__wrap">
+                            <img src="./img/Ellipse 2(2).png" alt="" class="item__img">
+                        </div>
                         <p class="item__title">Дмитрий Иванов</p>
                         <p class="item__text">Специолист по видеокартам</p>
                         <button class="item__btn">Биография</button>
                     </div>
                     <div class="slider__item">
-                        <img src="./img/Ellipse 2.png" alt="" class="item__img">
+                        <div class="img__wrap">
+                            <img src="./img/Ellipse 2.png" alt="" class="item__img">
+                        </div>
                         <p class="item__title">Дмитрий Иванов</p>
                         <p class="item__text">Специолист по видеокартам</p>
                         <button class="item__btn">Биография</button>
@@ -255,25 +305,33 @@
             <div class="footer__wrap">
                 <div class="wrap__header">
                     <h2 class="wrap__title">Статьи каждую неделю</h2>
-                    <p class="wrap__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+                    <p class="wrap__text">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
                 </div>
                 <form action="POST">
                     <input type="e-mail" class="footer__email" placeholder="e-mail">
-                    <button class="footer__btn">Подписатся</button>
+                    <button class="btn">Подписатся</button>
                 </form>
                 <div class="wrap__icons">
-                    <div class="icons__item">
-                        <img src="./img/Vector (1).png" alt="" class="wrap__icon">
-                    </div>
-                    <div class="icons__item">
-                        <img src="./img/Vector (2).png" alt="" class="wrap__icon">
-                    </div>
-                    <div class="icons__item">
-                        <img src="./img/Vector.png" alt="" class="wrap__icon">
-                    </div>
-                    <div class="icons__item">
-                        <img src="./img/instagram.png" alt="" class="wrap__icon">
-                    </div>
+                    <a href="#" class="icon__link">
+                        <div class="icons__item">
+                            <img src="./img/Vector (1).png" alt="" class="wrap__icon">
+                        </div>
+                    </a>
+                    <a href="#" class="icon__link">
+                        <div class="icons__item">
+                            <img src="./img/Vector (2).png" alt="" class="wrap__icon">
+                        </div>
+                    </a>
+                    <a href="#" class="icon__link">
+                        <div class="icons__item">
+                            <img src="./img/Vector.png" alt="" class="wrap__icon">
+                        </div>
+                    </a>
+                    <a href="#" class="icon__link">
+                        <div class="icons__item">
+                            <img src="./img/instagram.png" alt="" class="wrap__icon">
+                        </div>
+                    </a>
                 </div>
             </div>
             
