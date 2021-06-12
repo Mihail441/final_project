@@ -1,32 +1,19 @@
 $(document).ready(function(){
-    $('.multiple-items').slick({
-        infinite: true,
-        dots: false,
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
+   $('.teachers__slider').slick({
+      arrows:true,  
+      // adaptiveHeight:true,
+      infinitye:true,
+      slidesToScroll:3,
+      slidesToShow:3,
+      autoplay:true, 
+      speed:500, 
+      autoplaySpeed:1000, 
+      pauseOnFocus:true,
+      pauseOnHover:true,
+      prevArrow: $('.slick-btn-prev'),
+      nextArrow: $('.slick-btn-next')
+
+
+
+   });
 });
-$(function() {
-
-// scrollTop
-var $page = $('html, body');
-$('a[href*="#"]').click(function() {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1600);
-    return false;
-});
-
-
-// Collapse
-$("[data-collapse]").on("click", function(event) {
-    event.preventDefault();
-
-    var $this = $(this),
-        blockId = $this.data('collapse');
-
-    $this.toggleClass("active");
-})
-})
-var acc = document.getElementsByClassName("accordion");
-var i;
